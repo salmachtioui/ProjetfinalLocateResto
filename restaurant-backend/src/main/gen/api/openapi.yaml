@@ -1,0 +1,36 @@
+openapi: 3.0.3
+info:
+  description: restaurant_backend API
+  title: restaurant_backend API
+  version: 1.0.0
+servers:
+- url: https://restaurant_backend
+paths:
+  /villes/villes/all:
+    get:
+      operationId: getAllUsers
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                items:
+                  $ref: '#/components/schemas/Ville'
+                type: array
+          description: OK
+      summary: GET villes/villes/all
+      x-accepts: '*/*'
+components:
+  schemas:
+    Ville:
+      example:
+        id: 0
+        nom: nom
+      properties:
+        id:
+          format: int32
+          type: integer
+        nom:
+          type: string
+      type: object
+

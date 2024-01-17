@@ -1,6 +1,10 @@
 # Introduction
 Cette solution de localisation de restaurants intègre de manière experte des technologies de pointe, en utilisant Spring Boot pour le backend, Angular pour le frontend, et Docker pour la gestion des conteneurs. L'ajout de Spring Security renforce la protection des données sensibles. L'application offre une gestion complète des villes, zones, restaurants et spécialités, procurant ainsi une expérience utilisateur sécurisée et conviviale. Dans cette exploration approfondie, nous mettrons en lumière la synergie entre ces technologies, en mettant en avant l'intégration transparente de Docker .
+# Conception'Base de données) :
+![image](https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/ba2a17e8-f3bf-4a91-94c4-3dbb620c225c)
+
 # Backend avec Spring Boot
+![image](https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/05140fd7-836f-408c-a4e4-e1dbfa42f6af)
 
 La conception du backend de notre application de localisation de restaurants repose sur l'utilisation de Spring Boot, apportant des avantages significatifs tels que :
 
@@ -14,6 +18,7 @@ Gestion des dépendances :
 Grâce à l'outil de gestion de dépendances intégré, Apache Maven ou Gradle, Spring Boot simplifie la gestion des bibliothèques et des dépendances. Cela garantit l'utilisation de versions compatibles des différentes bibliothèques, évitant ainsi les conflits potentiels.
 
 # Frontend avec Angular
+![image](https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/a04d7f58-a62c-416e-85f9-92c9a5668c84)
 
 L'utilisation de Angular pour le frontend de notre application de localisation de restaurants offre plusieurs avantages, notamment :
 
@@ -34,23 +39,23 @@ Docker Hub est un registre centralisé d'images Docker géré par Docker, Inc. I
 ![image](https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/0e6d3b35-fd81-4511-8797-ba2848976077)
 Pour pousser un projet Docker vers Docker Hub, suivez ces étapes :
 
-Création de l'Image Docker :
+- Création de l'Image Docker :
 Utilisez docker build pour créer une image Docker à partir du fichier Dockerfile de votre projet.
 docker build -t projet_frontend-backend:tag 
-Connexion à Docker Hub :
+- Connexion à Docker Hub :
 Authentifiez-vous sur Docker Hub avec docker login en fournissant votre nom d'utilisateur et votre mot de passe.
 docker login
-Étiquetage de l'Image :
+- Étiquetage de l'Image :
 Taguez votre image avec votre nom d'utilisateur Docker Hub et le nom de l'image.
 docker tag projet_frontend-backend:tag salmachtioui999688/projet_frontend-backend:tag
-Poussée de l'Image sur Docker Hub :
+- Poussée de l'Image sur Docker Hub :
 Utilisez docker push pour téléverser l'image vers Docker Hub.
 docker push salmachtioui999688/projet_frontend-backend:tag
-Partage du Projet :
+- Partage du Projet :
 Communiquez le nom d'utilisateur Docker Hub, le nom de l'image et le tag aux personnes nécessitant l'accès à votre image.
-. Pour le Backend:
+- Pour le Backend:
 [docker push salmachtioui999688/projet_frontend-backend:tagname](https://hub.docker.com/repository/docker/salmachtioui999688/projet_frontend-backend/general)
-. Pour le Frontend :
+- Pour le Frontend :
 [docker push salmachtioui999688/projet_frontend-frontend:tagname](https://hub.docker.com/repository/docker/salmachtioui999688/projet_frontend-frontend/general)
 
 # Vedio démonstration

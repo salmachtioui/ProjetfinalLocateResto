@@ -1,5 +1,5 @@
-# Introduction
-Cette solution de localisation de restaurants intègre de manière experte des technologies de pointe, en utilisant Spring Boot pour le backend, Angular pour le frontend, et Docker pour la gestion des conteneurs. L'ajout de Spring Security renforce la protection des données sensibles. L'application offre une gestion complète des villes, zones, restaurants et spécialités, procurant ainsi une expérience utilisateur sécurisée et conviviale. Dans cette exploration approfondie, nous mettrons en lumière la synergie entre ces technologies, en mettant en avant l'intégration transparente de Docker .
+# Présentation
+Notre web application "RestoLocate" offre une solution de localisation de restaurants  qui intègre de manière experte des technologies de pointe, en utilisant Spring Boot pour le backend, Angular pour le frontend, et Docker pour la gestion des conteneurs. L'ajout de Spring Security renforce la protection des données sensibles. L'application offre une gestion complète des villes, zones, restaurants et spécialités, procurant ainsi une expérience utilisateur sécurisée et conviviale. Dans cette exploration approfondie, nous mettrons en lumière la synergie entre ces technologies, en mettant en avant l'intégration transparente de Docker .
 # Conception(Base de données) :
 ![image](https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/ba2a17e8-f3bf-4a91-94c4-3dbb620c225c)
 
@@ -18,7 +18,8 @@ Gestion des dépendances :
 Grâce à l'outil de gestion de dépendances intégré, Apache Maven ou Gradle, Spring Boot simplifie la gestion des bibliothèques et des dépendances. Cela garantit l'utilisation de versions compatibles des différentes bibliothèques, évitant ainsi les conflits potentiels.
 
 # Frontend avec Angular
-![image](https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/a04d7f58-a62c-416e-85f9-92c9a5668c84)
+![image](https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/152c7435-461f-4162-b1a5-a47f9d5de7c2)
+
 
 L'utilisation de Angular pour le frontend de notre application de localisation de restaurants offre plusieurs avantages, notamment :
 

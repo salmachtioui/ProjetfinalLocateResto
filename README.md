@@ -27,3 +27,5 @@ Interaction fluide avec le Backend :
 Pour interagir avec le backend, Angular utilise des requêtes HTTP, telles que l'API Fetch ou des bibliothèques tierces. Cette approche permet une intégration transparente des données provenant du backend dans les composants Angular, assurant une communication fluide entre le frontend et le backend.
 # Vedio démonstration
 
+https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/f281ad4e-86a8-42d5-ae0c-36d6f897978b
+

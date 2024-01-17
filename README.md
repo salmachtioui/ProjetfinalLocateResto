@@ -29,6 +29,29 @@ Pour interagir avec le backend, Angular utilise des requêtes HTTP, telles que l
 # Docker 
 L'intégration de Docker dans le projet de localisation de restaurants utilisant Angular pour le frontend présente plusieurs avantages. Docker permet d'emballer l'application Angular, simplifiant ainsi le déploiement sur différentes plates-formes. Il isole les dépendances, évitant les conflits, et offre une gestion efficace des ressources. La configuration de l'application est simplifiée grâce aux fichiers Dockerfile, favorisant la reproductibilité. Docker facilite également la gestion de multiples environnements, rendant le déploiement plus flexible. En résumé, Docker améliore la portabilité, la gestion des dépendances, et simplifie le cycle de vie du développement et du déploiement de l'application Angular de localisation de restaurants.
 ![image](https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/8447e790-8382-4115-891f-7cd5043445d4)
+# Docker Hub
+Docker Hub est un registre centralisé d'images Docker géré par Docker, Inc. Il offre un emplacement pour stocker, partager et collaborer sur des images Docker. Les développeurs peuvent y téléverser leurs images, favorisant la réutilisation et la distribution rapide d'applications. Docker Hub propose des repositories publics et privés, permet l'intégration avec Docker CLI, et offre des fonctionnalités telles que les builds automatisés, la gestion des versions, la certification d'images, et l'intégration avec des services de CI/CD. En résumé, Docker Hub joue un rôle clé dans la simplification du développement, du déploiement et de la collaboration dans l'écosystème des conteneurs Docker.
+![image](https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/0e6d3b35-fd81-4511-8797-ba2848976077)
+Pour pousser un projet Docker vers Docker Hub, suivez ces étapes :
+
+Création de l'Image Docker :
+Utilisez docker build pour créer une image Docker à partir du fichier Dockerfile de votre projet.
+docker build -t projet_frontend-backend:tag 
+Connexion à Docker Hub :
+Authentifiez-vous sur Docker Hub avec docker login en fournissant votre nom d'utilisateur et votre mot de passe.
+docker login
+Étiquetage de l'Image :
+Taguez votre image avec votre nom d'utilisateur Docker Hub et le nom de l'image.
+docker tag projet_frontend-backend:tag salmachtioui999688/projet_frontend-backend:tag
+Poussée de l'Image sur Docker Hub :
+Utilisez docker push pour téléverser l'image vers Docker Hub.
+docker push salmachtioui999688/projet_frontend-backend:tag
+Partage du Projet :
+Communiquez le nom d'utilisateur Docker Hub, le nom de l'image et le tag aux personnes nécessitant l'accès à votre image.
+. Pour le Backend:
+[docker push salmachtioui999688/projet_frontend-backend:tagname](https://hub.docker.com/repository/docker/salmachtioui999688/projet_frontend-backend/general)
+. Pour le Frontend :
+[docker push salmachtioui999688/projet_frontend-frontend:tagname](https://hub.docker.com/repository/docker/salmachtioui999688/projet_frontend-frontend/general)
 
 # Vedio démonstration
 

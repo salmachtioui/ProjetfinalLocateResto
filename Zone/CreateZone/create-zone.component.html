@@ -1,0 +1,43 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+
+                        <h4 class="card-title">Ajouter une ville </h4>
+                    </div>
+                    <div class="card-body">
+                        <form (ngSubmit)="onSubmit()">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Ajouter le nom de la zone" type="text" id="nom"
+                                               [(ngModel)]="zone.nom"
+                                               name="nom">
+                                    </mat-form-field>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>choisir une ville</mat-label>
+                                        <mat-select id="ville_id" name="ville_id"
+                                                    [(ngModel)]="zone.ville">
+                                            <mat-option *ngFor="let ville of villes "
+                                                        [value]="ville">{{ ville.nom}} </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+
+                                </div>
+
+                            </div>
+                            <button mat-raised-button type="submit" class="btn btn-danger pull-right">Soumettre</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

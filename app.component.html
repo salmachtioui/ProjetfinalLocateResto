@@ -1,0 +1,18 @@
+<!-- home.component.html -->
+<body>
+    <div class="container">
+      <h2>Welcome to RestoLocate !!!</h2>
+      <nav>
+        <a routerLink="/"></a>
+        <div class="button-container" *ngIf="!adminLoggedIn && !userLoggedIn">
+          <button class="auth-button admin-button" (click)="loginAsAdmin()">Login as Administrator</button>
+          <button class="auth-button user-button" (click)="onSubmit()">Login as User</button>
+        </div>
+        <div *ngIf="adminLoggedIn">Admin is logged in!</div>
+        <div *ngIf="userLoggedIn">User is logged in!</div>
+      </nav>
+    </div>
+  
+    <router-outlet></router-outlet>
+  </body>
+  

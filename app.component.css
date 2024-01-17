@@ -1,0 +1,54 @@
+/* home.component.css */
+body {
+    background-image: url(https://pro.galaktik.fr/wp-content/uploads/restaurant_site_pro.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    color: white; /* Set text color to white for better visibility on the image */
+    padding-top: 50px; /* Adjust as needed */
+    position: relative; /* Add relative positioning to the container */
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.auth-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.admin-button {
+    background-color: rgb(78, 54, 8);
+    color: white;
+}
+
+.user-button {
+    background-color: #502905;
+    color: white;
+}
+
+
+
+

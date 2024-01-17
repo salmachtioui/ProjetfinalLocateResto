@@ -25,3 +25,5 @@ La philosophie de React met l'accent sur la création de composants réutilisabl
 
 Interaction fluide avec le Backend :
 Pour interagir avec le backend, Angular utilise des requêtes HTTP, telles que l'API Fetch ou des bibliothèques tierces. Cette approche permet une intégration transparente des données provenant du backend dans les composants Angular, assurant une communication fluide entre le frontend et le backend.
+# Vedio démonstration
+

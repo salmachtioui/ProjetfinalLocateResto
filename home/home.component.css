@@ -1,0 +1,15 @@
+/* home.component.css */
+.container {
+    text-align: center;
+}
+
+.map-image {
+    width: 300px; /* Adjust the size according to your needs */
+    height: 300px;
+    background: url('https://www.easy-lunch.fr/wp-content/uploads/2019/09/emplacement-restaurant.jpg') center center no-repeat;
+    background-size: cover;
+    margin: 20px auto;
+}
+
+/* Add any additional styles for the home component as needed */
+

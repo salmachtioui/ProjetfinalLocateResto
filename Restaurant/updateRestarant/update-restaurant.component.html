@@ -1,0 +1,92 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title">Mise a jour de le restaurant </h4>
+
+          </div>
+          <div class="card-body">
+            <form (ngSubmit)="onSubmit()">
+              <div class="row">
+                <div class="col-md-5">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Ajouter le nom" type="text" id="nom"
+                           [(ngModel)]="restaurant.nom"
+                           name="nom">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-5">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Adresse" type="text" id="adresse"
+                           [(ngModel)]="restaurant.adresse"
+                           name="adresse">
+                  </mat-form-field>
+
+                </div>
+                <div class="col-md-5">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Rank" type="text" id="rank"
+                           [(ngModel)]="restaurant.rank"
+                           name="rank">
+                  </mat-form-field>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="longitude" type="text" id="longitude"
+                           [(ngModel)]="restaurant.longitude"
+                           name="longitude">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-5">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Latitude" type="text" id="latitude"
+                           [(ngModel)]="restaurant.latitude"
+                           name="latitude">
+                  </mat-form-field>
+
+                </div>
+                <div class="col-md-5">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="heureOpen" type="text" id="heureOpen"
+                           [(ngModel)]="restaurant.heureOpen"
+                           name="heureOpen">
+                  </mat-form-field>
+
+                </div>
+                <div class="col-md-5">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="heureClose" type="text" id="heureClose"
+                           [(ngModel)]="restaurant.heureClose"
+                           name="heureClose">
+                  </mat-form-field>
+
+                </div>
+                <div class="col-md-5">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Etat</mat-label>
+                    <mat-select name="etat" id="etat" [(ngModel)]="restaurant.etat">
+                      <mat-option value="0">en attente</mat-option>
+                      <mat-option value="1">validé</mat-option>
+                      <mat-option value="2">refusé</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <button mat-raised-button type="submit" class="btn btn-danger pull-right">Soumettre</button>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+

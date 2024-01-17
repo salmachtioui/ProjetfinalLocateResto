@@ -1,0 +1,119 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+
+                        <h4 class="card-title">Ajouter un restaurant </h4>
+                    </div>
+                    <div class="card-body">
+                        <form (ngSubmit)="onSubmit()">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Ajouter le url" type="text" id="url"
+                                               [(ngModel)]="restaurant.url"
+                                               name="url">
+                                    </mat-form-field>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Ajouter l'adresse" type="text" id="adresse"
+                                               [(ngModel)]="restaurant.adresse"
+                                               name="adresse">
+                                    </mat-form-field>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Ajouter l'etat" type="text" id="etat"
+                                               [(ngModel)]="restaurant.etat"
+                                               name="etat">
+                                    </mat-form-field>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Ajouter l'heure du fermeture" type="text" id="heureClose"
+                                               [(ngModel)]="restaurant.heureClose"
+                                               name="heureClose">
+                                    </mat-form-field>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Ajouter l'heure d'ouverture" type="text" id="heureOpen"
+                                               [(ngModel)]="restaurant.heureOpen"
+                                               name="heureOpen">
+                                    </mat-form-field>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Ajouter la latitude" type="text" id="latitude"
+                                               [(ngModel)]="restaurant.latitude"
+                                               name="latitude">
+                                    </mat-form-field>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Ajouter la longitude" type="text" id="longitude"
+                                               [(ngModel)]="restaurant.longitude"
+                                               name="longitude">
+                                    </mat-form-field>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Ajouter le nom" type="text" id="nom"
+                                               [(ngModel)]="restaurant.nom"
+                                               name="Nom">
+                                    </mat-form-field>
+
+                                </div>
+
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Ajouter le rank" type="text" id="rank"
+                                               [(ngModel)]="restaurant.rank"
+                                               name="rank">
+                                    </mat-form-field>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>choisir une serie</mat-label>
+                                        <mat-select id="serie_id" name="serie_id"
+                                                    [(ngModel)]="restaurant.serie">
+                                            <mat-option *ngFor="let serie of series "
+                                                        [value]="serie">{{ serie.nom}} </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>choisir une zone</mat-label>
+                                        <mat-select id="zone_id" name="zone_id"
+                                                    [(ngModel)]="restaurant.zone">
+                                            <mat-option *ngFor="let zone of zones "
+                                                        [value]="zone">{{ zone.nom}} </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+
+                                </div>
+
+                            </div>
+                            <button mat-raised-button type="submit" class="btn btn-danger pull-right">Soumettre</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

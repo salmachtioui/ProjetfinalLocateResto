@@ -1,6 +1,6 @@
 # Introduction
 Cette solution de localisation de restaurants intègre de manière experte des technologies de pointe, en utilisant Spring Boot pour le backend, Angular pour le frontend, et Docker pour la gestion des conteneurs. L'ajout de Spring Security renforce la protection des données sensibles. L'application offre une gestion complète des villes, zones, restaurants et spécialités, procurant ainsi une expérience utilisateur sécurisée et conviviale. Dans cette exploration approfondie, nous mettrons en lumière la synergie entre ces technologies, en mettant en avant l'intégration transparente de Docker .
-# Conception'Base de données) :
+# Conception(Base de données) :
 ![image](https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/ba2a17e8-f3bf-4a91-94c4-3dbb620c225c)
 
 # Backend avec Spring Boot

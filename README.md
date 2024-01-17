@@ -56,4 +56,9 @@ Communiquez le nom d'utilisateur Docker Hub, le nom de l'image et le tag aux per
 # Vedio démonstration
 
 https://github.com/salmachtioui/ProjetfinalLocateResto/assets/147477621/f281ad4e-86a8-42d5-ae0c-36d6f897978b
+# Technologies Utilisées:
+Spring Boot
 
+Angular
+
+Docker
